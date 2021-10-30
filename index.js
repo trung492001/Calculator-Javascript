@@ -1,9 +1,7 @@
 const display = document.getElementById("show");
-const events = document.querySelectorAll("input");
-events.forEach(Eve => Eve.addEventListener("click", calculate));
 var result = false;
 function calculate(e){
-    const event = e.target.value;
+    const event = e;
     if (event === "=")
     {
         var ope = display.textContent;
