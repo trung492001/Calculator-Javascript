@@ -16,7 +16,7 @@ function calculate(e){
     }
     else if (event === "C")
     {
-        display.innerHTML = "";
+        display.innerText = "0";
     }
     else 
     {
@@ -26,7 +26,8 @@ function calculate(e){
             {
                 display.innerHTML = "";
                 result = false;
-            } 
+            }else if (display.innerHTML === "0")
+                display.innerHTML = "";
         }
         display.innerHTML += event;
     }
